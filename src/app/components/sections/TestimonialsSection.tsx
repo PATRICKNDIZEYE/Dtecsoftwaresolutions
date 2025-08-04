@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import { Star, ChevronLeft, ChevronRight, Quote, Building2, User, Award } from 'lucide-react';
 import { useState } from 'react';
 
+type Category = 'development' | 'training' | 'marketing' | 'consulting';
+
 type Testimonial = {
   id: number;
   name: string;
@@ -12,7 +14,18 @@ type Testimonial = {
   content: string;
   rating: number;
   image: string;
-  category: 'development' | 'training' | 'marketing' | 'consulting';
+  category: Category;
+};
+
+type ClientCard = {
+  id: number;
+  name: string;
+  role: string;
+  company: string;
+  content: string;
+  rating: number;
+  category: Category;
+  iconName: string;
 };
 
 const mainTestimonials: Testimonial[] = [
@@ -48,7 +61,7 @@ const mainTestimonials: Testimonial[] = [
   },
 ];
 
-const clientCards = [
+const clientCards: ClientCard[] = [
   {
     id: 1,
     name: 'David Kim',
@@ -91,14 +104,14 @@ const clientCards = [
   },
 ];
 
-const categoryColors = {
+const categoryColors: Record<Category, string> = {
   development: 'from-blue-500/20 to-cyan-500/20',
   training: 'from-green-500/20 to-emerald-500/20',
   marketing: 'from-purple-500/20 to-pink-500/20',
   consulting: 'from-orange-500/20 to-red-500/20',
 };
 
-const categoryBorders = {
+const categoryBorders: Record<Category, string> = {
   development: 'border-blue-500/30',
   training: 'border-green-500/30',
   marketing: 'border-purple-500/30',
@@ -172,7 +185,7 @@ export function TestimonialsSection() {
             </div>
             
             <blockquote className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              "{currentTestimonial.content}"
+              &ldquo;{currentTestimonial.content}&rdquo;
             </blockquote>
             
             <div className="text-center">
@@ -263,7 +276,7 @@ export function TestimonialsSection() {
                   
                   {/* Content */}
                   <blockquote className="text-sm text-gray-300 mb-4 line-clamp-4">
-                    "{card.content}"
+                    &ldquo;{card.content}&rdquo;
                   </blockquote>
                   
                   {/* Author */}

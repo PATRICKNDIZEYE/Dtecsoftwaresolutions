@@ -67,7 +67,7 @@ export function AboutSection() {
               </h2>
               <div className="h-0.5 w-20 bg-gradient-to-r from-primary-500 to-transparent mb-8"></div>
               <p className="text-gray-400 mb-6">
-                At DTEC Software Solutions, we're not just another tech company. We're a team of passionate innovators, 
+                At DTEC Software Solutions, we&apos;re not just another tech company. We&apos;re a team of passionate innovators, 
                 designers, and developers committed to delivering exceptional digital experiences that drive real business results.
               </p>
               <p className="text-gray-400 mb-8">

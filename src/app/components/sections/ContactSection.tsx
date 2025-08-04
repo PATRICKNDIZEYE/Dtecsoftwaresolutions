@@ -81,7 +81,7 @@ export function ContactSection() {
             transition={{ duration: 0.6 }}
             className="space-y-8"
           >
-            <h3 className="text-2xl font-bold">Let's Talk About Your Project</h3>
+            <h3 className="text-2xl font-bold">Let&apos;s Talk About Your Project</h3>
             <p className="text-gray-400">
               Have a project in mind or want to learn more about our services? 
               Fill out the form and our team will get back to you as soon as possible.

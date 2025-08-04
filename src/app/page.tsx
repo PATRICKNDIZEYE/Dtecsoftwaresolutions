@@ -12,7 +12,7 @@ interface ButtonProps {
   children: ReactNode;
   variant?: 'primary' | 'outline';
   className?: string;
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 interface ServiceCardProps {
@@ -172,7 +172,7 @@ export default function Home() {
               Ready to Transform Your Business?
             </h2>
             <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
-              Let's discuss how DTEC Software Solutions can help you achieve your digital goals.
+              Let&apos;s discuss how DTEC Software Solutions can help you achieve your digital goals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="#contact" className="w-full sm:w-auto">
