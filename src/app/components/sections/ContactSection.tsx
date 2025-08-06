@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Phone, Send } from 'lucide-react';
+import { Mail, MapPin, Phone, Send, Twitter, Linkedin, Github } from 'lucide-react';
 import { useForm } from 'react-hook-form';
 
 type FormData = {
@@ -112,19 +112,36 @@ export function ContactSection() {
             <div className="pt-8">
               <h4 className="text-lg font-medium mb-4">Follow Us</h4>
               <div className="flex space-x-4">
-                {['Twitter', 'LinkedIn', 'GitHub', 'Dribbble'].map((social) => (
-                  <a
-                    key={social}
-                    href={`https://${social.toLowerCase()}.com`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center text-gray-400 hover:text-white hover:bg-primary-500/10 transition-colors"
-                    aria-label={social}
-                  >
-                    <span className="sr-only">{social}</span>
-                    <span className="text-sm font-medium">{social.charAt(0)}</span>
-                  </a>
-                ))}
+                <a
+                  href="https://twitter.com/dtecsoft"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center text-gray-400 hover:text-white hover:bg-primary-500/10 transition-colors"
+                  aria-label="Twitter"
+                >
+                  <span className="sr-only">Twitter</span>
+                  <Twitter className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://linkedin.com/company/dtecsoftwaresolutions"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center text-gray-400 hover:text-white hover:bg-primary-500/10 transition-colors"
+                  aria-label="LinkedIn"
+                >
+                  <span className="sr-only">LinkedIn</span>
+                  <Linkedin className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://github.com/dtecsoftwaresolutions"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center text-gray-400 hover:text-white hover:bg-primary-500/10 transition-colors"
+                  aria-label="GitHub"
+                >
+                  <span className="sr-only">GitHub</span>
+                  <Github className="w-5 h-5" />
+                </a>
               </div>
             </div>
           </motion.div>

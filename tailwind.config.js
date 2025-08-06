@@ -19,18 +19,18 @@ module.exports = {
         background: 'var(--background)', 
         foreground: 'var(--foreground)',
         primary: {
-          DEFAULT: 'var(--primary)',
-          foreground: 'var(--primary-foreground)',
-          50: 'rgba(255, 255, 255, 0.02)',
-          100: 'rgba(255, 255, 255, 0.05)',
-          200: 'rgba(255, 255, 255, 0.1)',
-          300: 'rgba(255, 255, 255, 0.2)',
-          400: 'rgba(255, 255, 255, 0.4)',
-          500: 'rgba(255, 255, 255, 0.6)',
-          600: 'rgba(255, 255, 255, 0.8)',
-          700: 'rgba(255, 255, 255, 0.9)',
-          800: 'rgba(255, 255, 255, 0.95)',
-          900: 'rgba(255, 255, 255, 0.98)',
+              DEFAULT: 'var(--primary)',
+              foreground: 'var(--primary-foreground)',
+  50: 'rgba(109, 109, 109, 0.05)',   // gray #6D6D6D with 5% opacity
+  100: 'rgba(109, 109, 109, 0.1)',   // 10%
+  200: 'rgba(109, 109, 109, 0.2)',   // 20%
+  300: 'rgba(109, 109, 109, 0.3)',   // 30%
+  400: 'rgba(109, 109, 109, 0.4)',   // 40%
+  500: 'rgba(109, 109, 109, 0.6)',   // 60%
+  600: 'rgba(109, 109, 109, 0.8)',   // 80%
+  700: 'rgba(109, 109, 109, 0.9)',   // 90%
+  800: 'rgba(109, 109, 109, 0.95)',  // 95%
+  900: 'rgba(109, 109, 109, 0.98)',  // 98%
         },
         accent: {
           DEFAULT: 'var(--accent)',

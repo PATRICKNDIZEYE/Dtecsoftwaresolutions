@@ -5,13 +5,13 @@
 :root {
   --background: #000000;
   --foreground: #ffffff;
-  --primary: #ffffff;
-  --primary-foreground: #000000;
+  --primary: #6D6D6D; /* indigo-500 as primary tech color */
+  --primary-foreground: #ffffff;
   --muted: #0a0a0a;
   --muted-foreground: #a3a3a3;
   --border: #1f1f1f;
   --input: #1f1f1f;
-  --ring: #ffffff;
+  --ring: #6D6D6D;
   --radius: 0.5rem;
 }
 
@@ -45,8 +45,17 @@ h1, h2, h3, h4, h5, h6 {
   to { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
 .animate-fade-in {
   animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 /* Line clamp utility */

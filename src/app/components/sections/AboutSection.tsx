@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Users, Target, BarChart4, Lightbulb } from 'lucide-react';
+import { ImageSlideshow } from './ImageSlideshow';
 
 type StatCardProps = {
   icon: React.ReactNode;
@@ -104,33 +105,10 @@ export function AboutSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative"
+            className="relative group"
           >
-            <div className="relative rounded-2xl overflow-hidden border border-white/10">
-              <div className="aspect-w-16 aspect-h-9 bg-gray-900/50">
-                <div className="w-full h-full flex items-center justify-center text-gray-600">
-                  <div className="text-center p-8">
-                    <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gray-800 flex items-center justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="w-8 h-8 text-primary-400"
-                      >
-                        <polygon points="23 7 16 12 23 17 23 7" />
-                        <rect width="15" height="14" x="1" y="5" rx="2" ry="2" />
-                      </svg>
-                    </div>
-                    <p className="text-sm text-gray-400">About DTEC Software Solutions</p>
-                  </div>
-                </div>
-              </div>
+            <div className="w-full h-[400px]">
+              <ImageSlideshow />
             </div>
             <div className="absolute -right-10 -bottom-10 w-40 h-40 bg-primary-500/10 rounded-full blur-3xl -z-10"></div>
           </motion.div>
