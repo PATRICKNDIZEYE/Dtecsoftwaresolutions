@@ -6,11 +6,11 @@ import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
 
 const navigation = [
-  { name: 'Services', href: '#services' },
-  { name: 'About', href: '#about' },
-  { name: 'Testimonials', href: '#testimonials' },
-  { name: 'Pricing', href: '#pricing' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'SERVICES', href: '#services' },
+  { name: 'ABOUT', href: '#about' },
+  { name: 'TESTIMONIALS', href: '#testimonials' },
+
+  { name: 'CONTACT', href: '#contact' },
 ];
 
 export function Header() {
@@ -39,15 +39,8 @@ export function Header() {
           href="/"
           className="group flex items-center space-x-2 transition-all duration-300 hover:scale-105"
         >
-          <div className="relative w-8 h-8 transition-all duration-300 group-hover:rotate-12">
-            <Image
-              src="/globe.svg"
-              alt="D-TEC Logo"
-              fill
-              className="object-contain filter brightness-0 invert"
-            />
-          </div>
-          <span className="text-2xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-300">
+          
+          <span className="text-2xl italic font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-300">
             D-TEC
           </span>
         </Link>
@@ -67,7 +60,7 @@ export function Header() {
             href="#contact"
             className="ml-4 bg-primary-500 hover:bg-primary-600 text-black px-4 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/20 hover:translate-y-[-2px]"
           >
-            Get Started
+            GET STARTED
           </Link>
         </div>
 

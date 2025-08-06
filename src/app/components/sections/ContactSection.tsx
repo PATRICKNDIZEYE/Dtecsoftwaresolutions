@@ -15,20 +15,20 @@ const contactInfo = [
   {
     icon: <Mail className="w-6 h-6 text-primary-400" />,
     title: 'Email Us',
-    description: 'info@dtecsolutions.com',
-    link: 'mailto:info@dtecsolutions.com',
+    description: 'sales@dtecsoftwaresolutions.com | deepak@dtec.co.in',
+    link: 'mailto:deepak@dtec.co.in',
   },
   {
     icon: <MapPin className="w-6 h-6 text-primary-400" />,
     title: 'Visit Us',
-    description: '123 Tech Street, Silicon Valley, CA 94025',
-    link: 'https://maps.google.com',
+    description: 'RWANDA | UAE | INDIA',
+    link: 'https://maps.google.com?q=DTEC+Software+Solutions',
   },
   {
     icon: <Phone className="w-6 h-6 text-primary-400" />,
     title: 'Call Us',
-    description: '+1 (555) 123-4567',
-    link: 'tel:+15551234567',
+    description: '+91 87 1473 1403 | +250 780 888 777',
+    link: 'tel:+250 780 888 777',
   },
 ];
 
